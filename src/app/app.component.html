@@ -1,20 +1,47 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<header class="header-example">
+  <h1>Welcome to My Homepage</h1>
+  <p>Use the menu to select different Stylesheets</p>
+</header>
+<section class="content">
+  <nav>
+    <ul id="menulist">
+      <li class="menuitem">Stylesheet 1</li>
+      <li class="menuitem">Stylesheet 2</li>
+      <li class="menuitem">Stylesheet 3</li>
+      <li class="menuitem">Stylesheet 4</li>
+      <li class="menuitem">No Stylesheet</li>
+    </ul>
+  </nav>
 
+  <article id="main">
+    <h2>Same Page Different Stylesheets</h2>
+    <p>
+      This is a demonstration of how different stylesheets can change the layout
+      of your HTML page. You can change the layout of this page by selecting
+      different stylesheets in the menu, or by selecting one of the following
+      links:<br />
+      <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>,
+      <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>,
+      <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
+      <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
+    </p>
+    <h2>No Styles</h2>
+    <p>
+      This page uses DIV elements to group different sections of the HTML page.
+      Click here to see how the page looks like with no stylesheet:<br /><a
+        href="#"
+        onclick="noStyles();return false"
+        >No Stylesheet</a
+      >.
+    </p>
+  </article>
+  <aside id="sidebar">
+    <h3>Side-Bar</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </p>
+  </aside>
+</section>
+<footer class="footer-example"><h2 class="title-footer">Footer</h2></footer>
+<!-- <router-outlet></router-outlet> -->
